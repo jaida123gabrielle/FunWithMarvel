@@ -1,8 +1,34 @@
 $(document).ready(function(){
 
 
-//All code here
-
+  let movieList = [
+    "Captain America: The First Avenger",
+    "Captain Marvel",
+    "Iron Man",
+    "The Incredible Hulk",
+    "Iron Man 2",
+    "Thor",
+    "The Avengers",
+    "Iron Man 3",
+    "Thor: The Dark World",
+    "Captain America: The Winter Soldier",
+    "Guardians of the Galaxy",
+    "Guardians of the Galaxy Vol. 2",
+    "Avengers: Age of Ultron",
+    "Ant-Man",
+    "Captain America: Civil War",
+    "Doctor Strange",
+    "Black Panther",
+    "Spider-Man-Homecoming",
+    "Thor: Ragnarok",
+    "Ant-Man and the Wasp",
+    "Avengers: Infinity War",
+  ]
+for (let i = 0; i < movieList.length ; i++) {
+let newElement = `<p>${movieList[i]}</p>`
+console.log(newElement)
+$("#display-area").append(newElement)
+}
 
 
 
